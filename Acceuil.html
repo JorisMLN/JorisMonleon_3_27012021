@@ -2,53 +2,113 @@
 <html lang="fr">
 
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e7a1eca83b.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
 </head>
 
 <body>
 
     <!-- Header -->
-    <header>
-        <h1>Ohmyfood</h1>
+    <header class="header FlexAroundCenter">
+        <div>
+            <h1 class="header__logo FlexAroundCenter">ohmyfood</h1>
+        </div>
     </header>
 
     <!-- Explorer -->
-    <section class="explorer">
-        <div>
-            <h2>Logo Paris, Belleville</h2>
+    <section class="explorer FlexAroundCenter">
+
+        <div class="explorer__pbv FlexCenter">
+            <div class="icon FlexAroundCenter">
+                <i class="fas fa-map-marker-alt icon__map"></i>
+            </div>
+            <h3>Paris, Belleville</h3>
         </div>
-        <div>
-            <p>Réservez le menu qui vous convient.
-                <br />Découvrez des restaurants d'exception, selectionnés par nos soins.
-            </p>
+
+        <div class="explorer__reservez FlexAroundCenter">
+            <div class="explorer__reservez--text1">
+                <div>
+                    <h2>Réservez le menu qui vous convient.</h2>
+                </div>
+            </div>
+            <div class="explorer__reservez--text2">
+                <div>
+                    <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
+                </div>
+            </div>
+            <div class="btn-explorer FlexAroundCenter">Explorer nos restaurants</div>
         </div>
-        <div> Bouton Explorer nos restaurants</div>
+
     </section>
 
     <!-- Fonctionnement -->
-    <section class="fonctionnement">
-        <div>
+    <section class="fonct">
+        <div class="fonct__titre">
             <h2>Fonctionnement</h2>
         </div>
-        <div>
-            <div>Choisissez un restaurant</div>
-            <div>Composez votre menu</div>
-            <div>Dégustez au restaurant</div>
+        <div class="fonct__group FlexAroundCenter">
+            <div class="fonct__group__step">
+                <div class="icon FlexAroundCenter">
+                    <i class="fas fa-map-marker-alt icon__map"></i>
+                </div>
+                Choisissez un restaurant
+            </div>
+            <div class="fonct__group__step">
+                <div class="icon FlexAroundCenter">
+                    <i class="fas fa-map-marker-alt icon__map"></i>
+                </div>Composez votre menu
+            </div>
+            <div class="fonct__group__step">
+                <div class="icon FlexAroundCenter">
+                    <i class="fas fa-map-marker-alt icon__map"></i>
+                </div>
+                Dégustez au restaurant
+            </div>
         </div>
     </section>
 
     <!-- Nav -->
-    <nav>
-        <div>
+    <nav class="restaurant FlexBetweenCenter">
+
+        <div class="restaurant__titre">
             <h2>Restaurants</h2>
         </div>
-        <div>La palette du goût</div>
-        <div>La note enchantée</div>
-        <div>A la francaise</div>
-        <div>Le délice des sens</div>
+
+        <div class="restaurant__annonce">
+            <div class="Photo FlexAroundCenter">
+                <img class="photo__presentation" src="image/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Auberge">
+            </div>
+            <p><strong>La palette du goût</strong><br />
+                Mélilmontant</p>
+        </div>
+
+        <div class="restaurant__annonce">
+            <div class="Photo FlexAroundCenter">
+                <img class="photo__presentation" src="image/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Auberge">
+            </div>
+            <p><strong>La palette du goût</strong><br />
+                Mélilmontant</p>
+        </div>
+
+        <div class="restaurant__annonce">
+            <div class="Photo FlexAroundCenter">
+                <img class="photo__presentation" src="image/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Auberge">
+            </div>
+            <p><strong>La palette du goût</strong><br />
+                Mélilmontant</p>
+        </div>
+
+        <div class="restaurant__annonce">
+            <div class="Photo FlexAroundCenter">
+                <img class="photo__presentation" src="image/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Auberge">
+            </div>
+            <p><strong>La palette du goût</strong><br />
+                Mélilmontant</p>
+        </div>
+
     </nav>
 
     <!-- Footer -->
