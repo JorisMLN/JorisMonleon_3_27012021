@@ -208,7 +208,7 @@ h3 {
 /* Nav */
 .resto {
   background-color: #f0f0f0;
-  padding: 10px 0 40px 0;
+  padding: 30px 0 50px 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -218,14 +218,12 @@ h3 {
 }
 
 .resto__titre {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  width: 100%;
+  width: 90%;
   height: 40px;
   padding-left: 20px;
+  font-weight: bold;
+  font-size: 23px;
+  text-shadow: 1px 1px 1px gray;
 }
 
 .resto__annonce {
@@ -234,14 +232,15 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 20px;
-  -webkit-box-shadow: 1px 1px 10px gray;
-          box-shadow: 1px 1px 10px gray;
+  -webkit-box-shadow: 1px 1px 10px #b8b6b6;
+          box-shadow: 1px 1px 10px #b8b6b6;
   width: 90%;
-  height: 20%;
+  height: 22%;
+  background-color: white;
 }
 
 .resto__annonce__photo {
-  height: 65%;
+  height: 68%;
   border-radius: 15px 15px 0px 0px;
   overflow: hidden;
 }
@@ -259,7 +258,7 @@ h3 {
       -ms-flex-direction: row;
           flex-direction: row;
   width: 88%;
-  height: 32%;
+  height: 28%;
   padding: 0 20px 0 5px;
 }
 
