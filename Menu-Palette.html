@@ -2,34 +2,126 @@
 <html lang="fr">
 
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e7a1eca83b.js" crossorigin="anonymous"></script>
     <title>Ohmyfood - La palette du goût</title>
 </head>
 
 <body>
 
     <!-- Header -->
-    <header>
-        <div> LogoFleche Ohmyfood </div>
+    <header class="header FlexAroundCenter">
+        <div>
+            <h1 class="header__logo FlexAroundCenter">ohmyfood</h1>
+        </div>
     </header>
 
-    <!-- Sestion -->
+    <!-- Section -->
     <section>
-        <img>
-        <div>
-            <div> Nom du restaurant LogoCoeur</div>
-            <div> Entrée </div>
-            <div> Plats </div>
-            <div> Desserts </div>
-            <div> Bouton commander </div>
+        <div class="container FlexAroundCenter">
+            <div class="module-img FlexAroundCenter">
+                <img class="module-img__photo" src="image/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Auberge">
+            </div>
+            <div class="block-menu FlexAroundCenter">
+                <div class="block-menu__nom-resto FlexBetweenCenter">
+                    La palette du goût
+                    <i class="far fa-heart logocoeur"></i>
+                </div>
+
+                <div class="food FlexAroundCenter">
+                    <div class="food__titre FlexBetweenCenter"> PLATS </div>
+                    <div class="food__surligne"></div>
+                    <div class="food__selection FlexBetweenCenter">
+                        <div class="selection-text ">
+                            <div class="selection-text--1 FlexBetweenCenter">La note enchantée</div>
+                            <div class="selection-text--2 FlexBetweenCenter">Charonne</div>
+                        </div>
+                        <div class="selection-prix FlexBetweenCenter"> 20e</div>
+                    </div>
+                    <div class="food__selection FlexBetweenCenter">
+                        <div class="selection-text ">
+                            <div class="selection-text--1 FlexBetweenCenter">La note enchantée</div>
+                            <div class="selection-text--2 FlexBetweenCenter">Charonne</div>
+                        </div>
+                        <div class="selection-prix FlexBetweenCenter"> 20e</div>
+                    </div>
+                    <div class="food__selection FlexBetweenCenter">
+                        <div class="selection-text ">
+                            <div class="selection-text--1 FlexBetweenCenter">La note enchantée</div>
+                            <div class="selection-text--2 FlexBetweenCenter">Charonne</div>
+                        </div>
+                        <div class="selection-prix FlexBetweenCenter"> 20e</div>
+                    </div>
+                </div>
+
+                <div class="food FlexAroundCenter">
+                    <div class="food__titre FlexBetweenCenter"> PLATS </div>
+                    <div class="food__selection FlexBetweenCenter">
+                        <div class="selection-text ">
+                            <div class="selection-text--1 FlexBetweenCenter">La note enchantée</div>
+                            <div class="selection-text--2 FlexBetweenCenter">Charonne</div>
+                        </div>
+                        <div class="selection-prix FlexBetweenCenter"> 20e</div>
+                    </div>
+                    <div class="food__selection FlexBetweenCenter">
+                        <div class="selection-text ">
+                            <div class="selection-text--1 FlexBetweenCenter">La note enchantée</div>
+                            <div class="selection-text--2 FlexBetweenCenter">Charonne</div>
+                        </div>
+                        <div class="selection-prix FlexBetweenCenter"> 20e</div>
+                    </div>
+                    <div class="food__selection FlexBetweenCenter">
+                        <div class="selection-text ">
+                            <div class="selection-text--1 FlexBetweenCenter">La note enchantée</div>
+                            <div class="selection-text--2 FlexBetweenCenter">Charonne</div>
+                        </div>
+                        <div class="selection-prix FlexBetweenCenter"> 20e</div>
+                    </div>
+                </div>
+
+                <div class="food FlexAroundCenter">
+                    <div class="food__titre FlexBetweenCenter"> PLATS </div>
+                    <div class="food__selection FlexBetweenCenter">
+                        <div class="selection-text ">
+                            <div class="selection-text--1 FlexBetweenCenter">La note enchantée</div>
+                            <div class="selection-text--2 FlexBetweenCenter">Charonne</div>
+                        </div>
+                        <div class="selection-prix FlexBetweenCenter"> 20e</div>
+                    </div>
+                    <div class="food__selection FlexBetweenCenter">
+                        <div class="selection-text ">
+                            <div class="selection-text--1 FlexBetweenCenter">La note enchantée</div>
+                            <div class="selection-text--2 FlexBetweenCenter">Charonne</div>
+                        </div>
+                        <div class="selection-prix FlexBetweenCenter"> 20e</div>
+                    </div>
+                    <div class="food__selection FlexBetweenCenter">
+                        <div class="selection-text ">
+                            <div class="selection-text--1 FlexBetweenCenter">La note enchantée</div>
+                            <div class="selection-text--2 FlexBetweenCenter">Charonne</div>
+                        </div>
+                        <div class="selection-prix FlexBetweenCenter"> 20e</div>
+                    </div>
+                </div>
+
+                <div class="btn-command"> Bouton commander </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-
+    <footer class="footer">
+        <div class="footer__titre">
+            <h2>ohmyfood</h2>
+        </div>
+        <div class="footer__text FlexAroundCenter">
+            <div><i class="fas fa-utensils"></i> Proposez un restaurant</div>
+            <div><i class="fas fa-hands-helping"></i> Devenir partenaire</div>
+            <div>Mentions légales</div>
+            <div>Contact</div>
+        </div>
     </footer>
 </body>
 

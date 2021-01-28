@@ -239,3 +239,89 @@ h3{
         padding-left: 30px;
     }
 }
+
+
+/* Page des Restaurants */
+
+/* Section Menu */
+
+.container{
+    flex-direction: column;
+}
+.module-img{
+    height: 280px;
+    overflow: hidden;
+    &__photo{
+        display: flex;
+        max-height: 100%;
+    }
+}
+.block-menu{
+    background-color: $gris;
+    flex-direction: column;
+    height: 1200px;
+    width: 100%;
+    border-radius: 40px 40px 0 0;
+    margin-top: -60px;
+    &__nom-resto{
+        flex-direction: row;
+        width: 90%;
+        height: 4%;
+        font-family: 'Shrikhand';
+        font-size: 30px;
+        .logocoeur{
+            font-size: 20px;
+        }
+    }
+    .btn-command{
+        border: 1px solid $Primaire;
+        width: 90%;
+        height: 4%;
+    }
+}
+.food{
+    flex-direction: column;
+    border: 2px solid red;
+    width: 90%;
+    height: 26%;
+    &__titre{
+        display: flex;
+        text-align: center;
+        height: 10%;
+        width: 100%;
+        border: 1px solid blue;
+    }
+    &__surligne{
+        border: 1px solid $Tertiare;
+        height: 1px;
+        width: 30px;
+    }
+    &__selection{
+        background-color: white;
+        height: 23%;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 1px 1px 10px rgb(192, 189, 189);
+        .selection-text{
+            flex-direction: column;
+            height: 70%;
+            width: 75%;
+            padding-left: 12px;
+            &--1{
+                height: 45%;
+                font-weight: bold;
+                text-shadow: 1px 1px 1px gray;
+                font-size: 17px;
+            }
+            &--2{
+                height: 50%;
+            }
+        }
+        .selection-prix{
+            flex-direction: column-reverse;
+            height: 80%;
+            width: 40px;
+            text-align: end;
+        }
+    }
+}
