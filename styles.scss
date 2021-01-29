@@ -54,9 +54,26 @@ h3{
 
 /* header */
 .header{
-    &__logo{
-        font-family: 'Shrikhand';
-        max-height: 27px;
+    display: flex;
+    flex-direction: row;
+    height: 65px;
+    &__arrow{
+        display: flex;
+        text-align: center;
+        height: 100%;
+        width: 15%;
+        padding-top: 25px;
+        font-size: 20px;
+        color: rgb(39, 38, 38);
+    }
+    &__bloc{
+        margin-left: -15%;
+        height: 95%;
+        width: 98%;
+        &__logo{
+            max-height: 30px;
+            margin-bottom: -10px;
+        } 
     }
 }
 
@@ -216,13 +233,13 @@ h3{
 
 /* Footer */
 .footer{
-    height: 185px;
+    height: 195px;
     background-color: rgb(58, 58, 58);
     width: 100%;
     &__titre{
         display: flex;
         font-family: 'Shrikhand';
-        height: 35%;
+        height: 28%;
         padding-left: 30px;
         h2{
             color: white;
@@ -257,12 +274,14 @@ h3{
     }
 }
 .block-menu{
-    background-color: $gris;
+    background-color: rgb(243, 243, 243);
     flex-direction: column;
-    height: 1200px;
+    height: 1150px;
     width: 100%;
     border-radius: 40px 40px 0 0;
     margin-top: -60px;
+    padding-bottom: 50px;
+    padding-top: 20px;
     &__nom-resto{
         flex-direction: row;
         width: 90%;
@@ -270,7 +289,8 @@ h3{
         font-family: 'Shrikhand';
         font-size: 30px;
         .logocoeur{
-            font-size: 20px;
+            font-size: 23px;
+            margin-right: 10px;
         }
     }
     .btn-command{
@@ -281,47 +301,70 @@ h3{
 }
 .food{
     flex-direction: column;
-    border: 2px solid red;
     width: 90%;
     height: 26%;
     &__titre{
         display: flex;
         text-align: center;
-        height: 10%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 5px;
+        height: 8%;
         width: 100%;
-        border: 1px solid blue;
-    }
-    &__surligne{
-        border: 1px solid $Tertiare;
-        height: 1px;
-        width: 30px;
+        text-shadow: 1px 1px 1px gray;
+        &__surligne{
+            height: 3px;
+            width: 45px;
+            background-color: $Tertiare;
+            margin-bottom: -5px;
+        }
     }
     &__selection{
         background-color: white;
         height: 23%;
         width: 100%;
         border-radius: 15px;
-        box-shadow: 1px 1px 10px rgb(192, 189, 189);
+        box-shadow: 1px 1px 10px rgb(218, 218, 218);
         .selection-text{
+            display: flex;
+            justify-content: space-around;
             flex-direction: column;
             height: 70%;
             width: 75%;
             padding-left: 12px;
             &--1{
-                height: 45%;
+                height: 40%;
                 font-weight: bold;
                 text-shadow: 1px 1px 1px gray;
                 font-size: 17px;
             }
             &--2{
-                height: 50%;
+                height: 40%;
+                max-width: 250px;
+                font-size: 14px;
+                text-shadow: 1px 1px 2px rgb(197, 197, 197);
             }
         }
         .selection-prix{
             flex-direction: column-reverse;
             height: 80%;
             width: 40px;
+            margin-right: 13px;
             text-align: end;
+            font-weight: bold;
         }
     }
+}
+.btn-commander{
+    background-color: $Secondaire;
+    color: white;
+    width: 52%;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.hide-text{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
