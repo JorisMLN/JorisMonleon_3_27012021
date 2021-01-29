@@ -31,7 +31,7 @@ h3 {
   color: #636262;
 }
 
-.FlexAroundCenter {
+.flexAroundCenter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,7 +42,7 @@ h3 {
           align-items: center;
 }
 
-.FlexBetweenCenter {
+.flexBetweenCenter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +54,7 @@ h3 {
           align-items: center;
 }
 
-.FlexCenter {
+.flexCenter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
