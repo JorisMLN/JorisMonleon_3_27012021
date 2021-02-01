@@ -300,6 +300,7 @@ h3{
     }
 }
 .food{
+    border: 1px solid rgb(26, 41, 22);;
     flex-direction: column;
     width: 90%;
     height: 26%;
@@ -320,39 +321,73 @@ h3{
         }
     }
     &__selection{
+        border: 1px solid rgb(26, 41, 22);
         background-color: white;
         height: 23%;
         width: 100%;
         border-radius: 15px;
         box-shadow: 1px 1px 10px rgb(218, 218, 218);
         .selection-text{
+            border: 2px solid rgb(25, 0, 255);
             display: flex;
             justify-content: space-around;
             flex-direction: column;
             height: 70%;
-            width: 75%;
+            width: 400px;
             padding-left: 12px;
             &--1{
+                border: 1px solid red;
                 height: 40%;
                 font-weight: bold;
                 text-shadow: 1px 1px 1px gray;
                 font-size: 17px;
             }
             &--2{
+                border: 1px solid red;
                 height: 40%;
-                max-width: 250px;
                 font-size: 14px;
                 text-shadow: 1px 1px 2px rgb(197, 197, 197);
             }
         }
         .selection-prix{
+            border: 2px solid red;
             flex-direction: column-reverse;
-            height: 80%;
+            height: 65%;
             width: 40px;
             margin-right: 13px;
             text-align: end;
             font-weight: bold;
         }
+        &:hover{
+            &>.button-select{
+                transform: scalex(1);
+                &>.button-select__check{
+                transform: rotate(360deg);
+                }
+            }
+        }
+    }
+}
+.button-select{
+    border: 1px solid $Tertiare;
+    background-color: $Tertiare;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform-origin: right;
+    border-radius: 0 15px 15px 0;
+    height: 100%;
+    width: 85px;
+    transform: scalex(0);
+    transition: transform 600ms linear;
+    &__check{
+        color: $Tertiare;
+        background-color: white;
+        font-size: 20px;
+        border: 4px solid white;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        transition: transform 600ms ease-in-out;
     }
 }
 .btn-commander{
