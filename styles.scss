@@ -24,6 +24,10 @@ body{
     margin: 0px;
     font-family: 'roboto', Impact, 'Arial Narrow Bold', sans-serif;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 h2{
     font-size: 24px;
     text-shadow: 1px 1px 0px black;
@@ -54,25 +58,23 @@ h3{
 
 /* header */
 .header{
-    display: flex;
     flex-direction: row;
     height: 65px;
-    &__arrow{
-        display: flex;
-        text-align: center;
-        height: 100%;
+    &__link{
         width: 15%;
-        padding-top: 25px;
-        font-size: 20px;
-        color: rgb(39, 38, 38);
+        &__arrow{
+            display: flex;
+            text-align: center;
+            font-size: 20px;
+            color: rgb(39, 38, 38);
+        }
     }
     &__bloc{
-        margin-left: -15%;
         height: 95%;
-        width: 98%;
+        width: 84%;
         &__logo{
             max-height: 30px;
-            margin-bottom: -10px;
+            margin-left: -52px;
         } 
     }
 }

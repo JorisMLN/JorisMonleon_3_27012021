@@ -20,6 +20,11 @@ body {
   font-family: 'roboto', Impact, 'Arial Narrow Bold', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 h2 {
   font-size: 24px;
   text-shadow: 1px 1px 0px black;
@@ -72,9 +77,6 @@ h3 {
 
 /* header */
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -82,27 +84,27 @@ h3 {
   height: 65px;
 }
 
-.header__arrow {
+.header__link {
+  width: 15%;
+}
+
+.header__link__arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  height: 100%;
-  width: 15%;
-  padding-top: 25px;
   font-size: 20px;
   color: #272626;
 }
 
 .header__bloc {
-  margin-left: -15%;
   height: 95%;
-  width: 98%;
+  width: 84%;
 }
 
 .header__bloc__logo {
   max-height: 30px;
-  margin-bottom: -10px;
+  margin-left: -52px;
 }
 
 /* Explorer */
