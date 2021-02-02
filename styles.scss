@@ -451,3 +451,68 @@ h3{
     overflow: hidden;
     white-space: nowrap;
 }
+
+/* Loading Spinner */
+
+
+.loading{
+    width: 100%;
+    height: 800px;
+    flex-direction: column;
+    &__Spinner{
+        color: $Primaire;
+        font-size: 60px;
+        animation: loadingSpinner 1500ms 300ms linear both infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+}
+
+
+@keyframes loadingSpinner{
+    0% {
+        transform: rotate(0);
+        color: $Primaire;
+    }
+    10%{
+        transform: rotate(36deg);
+        color: $Primaire;
+    }
+    20% {
+        transform: rotate(72deg);
+        color: $Primaire;
+    }
+    30% {
+        transform: rotate(108deg);
+        color: $Secondaire;
+    }
+    40% {
+        transform: rotate(144deg);
+        color: $Secondaire;
+    }
+    50% {
+        transform: rotate(180deg);
+        color: $Secondaire;
+    }
+    60% {
+        transform: rotate(216deg);
+        color: $Secondaire;
+    }
+    70%{
+        transform: rotate(252deg);
+        color: $Tertiare;
+    }
+    80% {
+        transform: rotate(288deg);
+        color: $Tertiare;
+    }
+    90% {
+        transform: rotate(324deg);
+        color: $Tertiare;
+    }
+    100% {
+        transform: rotate(360deg);
+        color: $Primaire;
+    }
+}
