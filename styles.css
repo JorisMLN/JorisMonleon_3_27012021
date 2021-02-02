@@ -156,11 +156,42 @@ h3 {
 }
 
 .explorer__reservez .btn-explorer {
-  background-color: #FF79DA;
+  background-color: #9356DC;
+  -webkit-box-shadow: 1px 1px 10px #918f8f;
+          box-shadow: 1px 1px 10px #918f8f;
+  text-shadow: 1px 1px 10px #918f8f;
+  font-size: 17px;
   color: white;
   width: 58%;
-  height: 50px;
+  height: 55px;
   border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.explorer__reservez .btn-explorer:hover {
+  border-radius: 30px;
+}
+
+.explorer__reservez .btn-explorer:hover::after {
+  border-radius: 30px;
+  opacity: 1;
+}
+
+.explorer__reservez .btn-explorer::after {
+  border-radius: 30px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle, #ff93e1 0%, #ff46cc 100%);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 350ms;
+  transition: opacity 350ms;
 }
 
 /* Fonctionnement */
@@ -306,6 +337,30 @@ h3 {
   color: #9356DC;
 }
 
+.resto__annonce__bot .logocoeur:hover + .logocoeur--full {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.resto__annonce__bot .logocoeur--full {
+  color: #9356DC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 21px;
+  margin-top: -20px;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 800ms;
+  transition: -webkit-transform 800ms;
+  transition: transform 800ms;
+  transition: transform 800ms, -webkit-transform 800ms;
+}
+
 .resto__annonce__bot p {
   font-weight: bold;
 }
@@ -366,6 +421,10 @@ h3 {
   height: 60%;
   color: white;
   padding-left: 30px;
+}
+
+.footer__text__contact {
+  color: white;
 }
 
 /* Page des Restaurants */
