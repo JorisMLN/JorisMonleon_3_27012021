@@ -300,6 +300,10 @@ h3 {
   font-size: 20px;
 }
 
+.resto__annonce__bot .logocoeur:hover {
+  color: #9356DC;
+}
+
 .resto__annonce__bot p {
   font-weight: bold;
 }
@@ -552,7 +556,7 @@ h3 {
 .button-select__check {
   color: #99E2D0;
   background-color: white;
-  font-size: 15px;
+  font-size: 18px;
   border: 3px solid white;
   border-radius: 50%;
   -webkit-transform: rotate(0deg);
