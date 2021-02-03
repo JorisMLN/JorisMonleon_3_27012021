@@ -352,18 +352,15 @@ h3 {
   display: flex;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  position: absolute;
-  font-size: 27px;
-  margin-top: -26px;
-  margin-left: -1px;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  font-size: 22px;
+  margin-top: -23px;
+  margin-left: 2px;
   -webkit-transform: scale(0);
           transform: scale(0);
-  -webkit-transition: -webkit-transform 800ms;
-  transition: -webkit-transform 800ms;
-  transition: transform 800ms;
-  transition: transform 800ms, -webkit-transform 800ms;
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
 }
 
 .resto__annonce__bot p {
@@ -451,6 +448,14 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   max-height: 100%;
+}
+
+.module-img__photo--version2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  max-height: none;
 }
 
 .block-menu {
@@ -690,8 +695,8 @@ h3 {
 /* Loading Spinner V.2 (total = 2250px)*/
 .hide-spin {
   height: 100vh;
-  -webkit-animation: hideSpin 2s forwards;
-          animation: hideSpin 2s forwards;
+  -webkit-animation: hideSpin 1s forwards;
+          animation: hideSpin 1s forwards;
 }
 
 .loading {
@@ -699,8 +704,8 @@ h3 {
   height: 100%;
   background-color: white;
   position: absolute;
-  -webkit-animation: loading 2s forwards;
-          animation: loading 2s forwards;
+  -webkit-animation: loading 1s forwards;
+          animation: loading 1s forwards;
 }
 
 .loading__spinner {
@@ -714,8 +719,8 @@ h3 {
 .loading__spinner__anim {
   color: #9356DC;
   font-size: 60px;
-  -webkit-animation: loadingSpinner 1500ms 300ms linear both infinite;
-          animation: loadingSpinner 1500ms 300ms linear both infinite;
+  -webkit-animation: loadingSpinner 1000ms 300ms linear both infinite;
+          animation: loadingSpinner 1000ms 300ms linear both infinite;
 }
 
 .loading__spinner__anim:hover {
