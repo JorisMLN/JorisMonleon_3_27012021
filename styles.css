@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Fonts */
 @font-face {
   font-family: 'Shrikhand';
@@ -155,7 +156,7 @@ h3 {
   width: 90%;
 }
 
-.explorer__reservez .btn-explorer {
+.btn-explorer {
   background-color: #9356DC;
   -webkit-box-shadow: 1px 1px 10px #918f8f;
           box-shadow: 1px 1px 10px #918f8f;
@@ -170,18 +171,18 @@ h3 {
   cursor: pointer;
 }
 
-.explorer__reservez .btn-explorer:hover {
+.btn-explorer:hover {
   border-radius: 30px;
   -webkit-box-shadow: 2px 0px 10px #0f0f0f;
           box-shadow: 2px 0px 10px #0f0f0f;
 }
 
-.explorer__reservez .btn-explorer:hover::after {
+.btn-explorer:hover::after {
   border-radius: 30px;
   opacity: 1;
 }
 
-.explorer__reservez .btn-explorer::after {
+.btn-explorer::after {
   border-radius: 30px;
   content: "";
   position: absolute;
@@ -598,7 +599,7 @@ h3 {
           transform: rotate(360deg);
 }
 
-.button-select {
+.food__selection .button-select {
   border: 3px solid #99E2D0;
   background-color: #99E2D0;
   display: -webkit-box;
@@ -618,7 +619,7 @@ h3 {
   transition: transform 400ms linear, -webkit-transform 400ms linear;
 }
 
-.button-select__check {
+.food__selection .button-select__check {
   color: #99E2D0;
   background-color: white;
   font-size: 18px;
@@ -632,19 +633,58 @@ h3 {
   transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 
-.btn-commander {
-  background-color: #FF79DA;
-  color: white;
-  width: 52%;
-  height: 50px;
-  border-radius: 30px;
-  margin-top: 30px;
-}
-
 .hide-text {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+/* selecteurs et animation d'arrivée d'un menu */
+.appear__item1 {
+  -webkit-animation: appear 400ms both;
+          animation: appear 400ms both;
+  -webkit-animation-timing-function: cubic-bezier(0.34, 0.08, 0.2, 0.99);
+          animation-timing-function: cubic-bezier(0.34, 0.08, 0.2, 0.99);
+}
+
+.appear__item2 {
+  -webkit-animation: appear 400ms both;
+          animation: appear 400ms both;
+  -webkit-animation-timing-function: cubic-bezier(0.34, 0.08, 0.2, 0.99);
+          animation-timing-function: cubic-bezier(0.34, 0.08, 0.2, 0.99);
+  -webkit-animation-delay: 125ms;
+          animation-delay: 125ms;
+}
+
+.appear__item3 {
+  -webkit-animation: appear 400ms both;
+          animation: appear 400ms both;
+  -webkit-animation-timing-function: cubic-bezier(0.34, 0.08, 0.2, 0.99);
+          animation-timing-function: cubic-bezier(0.34, 0.08, 0.2, 0.99);
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+    margin-bottom: -15px;
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 0px;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    margin-bottom: -15px;
+  }
+  to {
+    opacity: 1;
+    margin-bottom: 0px;
+  }
 }
 
 /* Loading Spinner V.2 (total = 2250px)*/
