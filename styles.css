@@ -166,12 +166,14 @@ h3 {
   height: 55px;
   border-radius: 30px;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   cursor: pointer;
 }
 
 .explorer__reservez .btn-explorer:hover {
   border-radius: 30px;
+  -webkit-box-shadow: 2px 0px 10px #0f0f0f;
+          box-shadow: 2px 0px 10px #0f0f0f;
 }
 
 .explorer__reservez .btn-explorer:hover::after {
@@ -330,7 +332,7 @@ h3 {
   display: flex;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .resto__annonce__bot .logocoeur:hover {
@@ -349,8 +351,10 @@ h3 {
   display: flex;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  font-size: 21px;
-  margin-top: -20px;
+  position: absolute;
+  font-size: 27px;
+  margin-top: -26px;
+  margin-left: -1px;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
   -webkit-transform: scale(0);
@@ -643,80 +647,103 @@ h3 {
   white-space: nowrap;
 }
 
-/* Loading Spinner */
+/* Loading Spinner V.2 (total = 2250px)*/
+.hide-spin {
+  height: 100vh;
+  -webkit-animation: hideSpin 2s forwards;
+          animation: hideSpin 2s forwards;
+}
+
 .loading {
   width: 100%;
-  height: 800px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  -webkit-animation: loading 2s forwards;
+          animation: loading 2s forwards;
+}
+
+.loading__spinner {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
-.loading__Spinner {
+.loading__spinner__anim {
   color: #9356DC;
   font-size: 60px;
   -webkit-animation: loadingSpinner 1500ms 300ms linear both infinite;
           animation: loadingSpinner 1500ms 300ms linear both infinite;
 }
 
-.loading__Spinner:hover {
+.loading__spinner__anim:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
 }
 
+@-webkit-keyframes hideSpin {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: scroll;
+  }
+}
+
+@keyframes hideSpin {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: scroll;
+  }
+}
+
+@-webkit-keyframes loading {
+  from {
+    opacity: 1;
+    z-index: 3;
+  }
+  90% {
+    opacity: 1;
+    z-index: 3;
+  }
+  to {
+    opacity: 0;
+    z-index: -5;
+  }
+}
+
+@keyframes loading {
+  from {
+    opacity: 1;
+    z-index: 3;
+  }
+  90% {
+    opacity: 1;
+    z-index: 3;
+  }
+  to {
+    opacity: 0;
+    z-index: -5;
+  }
+}
+
 @-webkit-keyframes loadingSpinner {
-  0% {
+  from {
     -webkit-transform: rotate(0);
             transform: rotate(0);
     color: #9356DC;
   }
-  10% {
-    -webkit-transform: rotate(36deg);
-            transform: rotate(36deg);
-    color: #9356DC;
-  }
-  20% {
-    -webkit-transform: rotate(72deg);
-            transform: rotate(72deg);
-    color: #9356DC;
-  }
   30% {
-    -webkit-transform: rotate(108deg);
-            transform: rotate(108deg);
-    color: #FF79DA;
-  }
-  40% {
-    -webkit-transform: rotate(144deg);
-            transform: rotate(144deg);
-    color: #FF79DA;
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    color: #FF79DA;
-  }
-  60% {
-    -webkit-transform: rotate(216deg);
-            transform: rotate(216deg);
     color: #FF79DA;
   }
   70% {
-    -webkit-transform: rotate(252deg);
-            transform: rotate(252deg);
     color: #99E2D0;
   }
-  80% {
-    -webkit-transform: rotate(288deg);
-            transform: rotate(288deg);
-    color: #99E2D0;
-  }
-  90% {
-    -webkit-transform: rotate(324deg);
-            transform: rotate(324deg);
-    color: #99E2D0;
-  }
-  100% {
+  to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     color: #9356DC;
@@ -724,57 +751,18 @@ h3 {
 }
 
 @keyframes loadingSpinner {
-  0% {
+  from {
     -webkit-transform: rotate(0);
             transform: rotate(0);
     color: #9356DC;
   }
-  10% {
-    -webkit-transform: rotate(36deg);
-            transform: rotate(36deg);
-    color: #9356DC;
-  }
-  20% {
-    -webkit-transform: rotate(72deg);
-            transform: rotate(72deg);
-    color: #9356DC;
-  }
   30% {
-    -webkit-transform: rotate(108deg);
-            transform: rotate(108deg);
-    color: #FF79DA;
-  }
-  40% {
-    -webkit-transform: rotate(144deg);
-            transform: rotate(144deg);
-    color: #FF79DA;
-  }
-  50% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-    color: #FF79DA;
-  }
-  60% {
-    -webkit-transform: rotate(216deg);
-            transform: rotate(216deg);
     color: #FF79DA;
   }
   70% {
-    -webkit-transform: rotate(252deg);
-            transform: rotate(252deg);
     color: #99E2D0;
   }
-  80% {
-    -webkit-transform: rotate(288deg);
-            transform: rotate(288deg);
-    color: #99E2D0;
-  }
-  90% {
-    -webkit-transform: rotate(324deg);
-            transform: rotate(324deg);
-    color: #99E2D0;
-  }
-  100% {
+  to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     color: #9356DC;
