@@ -644,6 +644,31 @@ h3 {
   white-space: nowrap;
 }
 
+/* Variante bloc menu pour la page "La note enchantée" */
+.variation {
+  height: 1231px;
+}
+
+.variation__nom-resto {
+  height: 46px;
+}
+
+.variation__food--1 {
+  height: 380px;
+}
+
+.variation__food--1__titre {
+  height: 29px;
+}
+
+.variation__food--1__selection {
+  height: 68px;
+}
+
+.variation__food--2 {
+  height: 299px;
+}
+
 /* selecteurs et animation d'arrivée d'un menu */
 .appear__item1 {
   -webkit-animation: appear 400ms both;
@@ -668,6 +693,15 @@ h3 {
           animation-timing-function: cubic-bezier(0.34, 0.08, 0.2, 0.99);
   -webkit-animation-delay: 250ms;
           animation-delay: 250ms;
+}
+
+.appear__item4 {
+  -webkit-animation: appear 400ms both;
+          animation: appear 400ms both;
+  -webkit-animation-timing-function: cubic-bezier(0.34, 0.08, 0.2, 0.99);
+          animation-timing-function: cubic-bezier(0.34, 0.08, 0.2, 0.99);
+  -webkit-animation-delay: 375ms;
+          animation-delay: 375ms;
 }
 
 @-webkit-keyframes appear {

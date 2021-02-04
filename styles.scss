@@ -454,6 +454,26 @@ h3{
     white-space: nowrap;
 }
 
+/* Variante bloc menu pour la page "La note enchantée" */
+.variation{
+    height: 1231px;
+    &__nom-resto{
+        height: 46px;
+    }
+    &__food--1{
+        height: 380px;
+        &__titre{
+            height: 29px;
+        }
+        &__selection{
+            height: 68px;
+        }
+    }
+    &__food--2{
+        height: 299px;
+    }
+}
+
 /* selecteurs et animation d'arrivée d'un menu */
 .appear__item1{
     animation: appear 400ms both;
@@ -468,6 +488,11 @@ h3{
     animation: appear 400ms both;
     animation-timing-function: cubic-bezier(.34,.08,.2,.99);
     animation-delay: 250ms;
+}
+.appear__item4{
+    animation: appear 400ms both;
+    animation-timing-function: cubic-bezier(.34,.08,.2,.99);
+    animation-delay: 375ms;
 }
 
 @keyframes appear{
