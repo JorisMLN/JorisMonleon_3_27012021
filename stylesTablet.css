@@ -1,0 +1,103 @@
+/* Responsive Tablette (entre 500 et 1100px)*/
+@media screen and (min-width: 500px) and (max-width: 1100px) {
+  /* Explorer */
+  .explorer__reservez {
+    padding: 10px 0px 20px 0px;
+  }
+  .btn-explorer {
+    width: 300px;
+  }
+  /* Fonctionnement */
+  .fonct {
+    height: 120px;
+    padding: 10px 0 10px 0;
+  }
+  .fonct__titre {
+    height: 10%;
+    padding-left: 55px;
+  }
+  .fonct__group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .fonct__group .step {
+    width: 25%;
+    height: 70%;
+  }
+  .fonct__group .step p {
+    font-size: 15px;
+  }
+  /* Nav */
+  .resto {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 580px;
+  }
+  .resto__annonce {
+    width: 45%;
+    height: 40%;
+  }
+  /* Footer */
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .footer__titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80%;
+    width: 25%;
+  }
+  .footer__titre h2 {
+    font-size: 35px;
+  }
+  /* Page Menu*/
+  .module-img__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    max-height: none;
+  }
+  .block-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 500px;
+    padding-bottom: 20px;
+  }
+  .food {
+    width: 30%;
+    height: 72%;
+  }
+  .food__selection {
+    height: 22%;
+  }
+  .variation__food--1__selection {
+    height: 19%;
+  }
+}
+/*# sourceMappingURL=stylesTablet.css.map */

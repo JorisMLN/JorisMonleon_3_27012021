@@ -28,7 +28,7 @@ a {
 
 h2 {
   font-size: 24px;
-  text-shadow: 1px 1px 0px black;
+  text-shadow: 1px 1px 2px #494848;
   color: #2c2b2b;
 }
 
@@ -86,7 +86,7 @@ h3 {
 }
 
 .header__link {
-  width: 15%;
+  width: 50px;
 }
 
 .header__link__arrow {
@@ -100,7 +100,7 @@ h3 {
 
 .header__bloc {
   height: 95%;
-  width: 84%;
+  width: 100%;
 }
 
 .header__bloc__logo {
@@ -157,9 +157,9 @@ h3 {
 }
 
 .btn-explorer {
-  background-color: #9356DC;
-  -webkit-box-shadow: 1px 1px 10px #918f8f;
-          box-shadow: 1px 1px 10px #918f8f;
+  background: linear-gradient(100deg, #9356DC, #FF79DA);
+  -webkit-box-shadow: 0px 6px 8px #918f8f;
+          box-shadow: 0px 6px 8px #918f8f;
   text-shadow: 1px 1px 10px #918f8f;
   font-size: 17px;
   color: white;
@@ -173,28 +173,9 @@ h3 {
 
 .btn-explorer:hover {
   border-radius: 30px;
-  -webkit-box-shadow: 2px 0px 10px #0f0f0f;
-          box-shadow: 2px 0px 10px #0f0f0f;
-}
-
-.btn-explorer:hover::after {
-  border-radius: 30px;
-  opacity: 1;
-}
-
-.btn-explorer::after {
-  border-radius: 30px;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: radial-gradient(circle, #ff93e1 0%, #ff46cc 100%);
-  opacity: 0;
-  z-index: -1;
-  -webkit-transition: opacity 350ms;
-  transition: opacity 350ms;
+  -webkit-box-shadow: 0px 6px 12px #918f8f;
+          box-shadow: 0px 6px 12px #918f8f;
+  background: linear-gradient(100deg, #a16be0, #ff93e1);
 }
 
 /* Fonctionnement */
@@ -425,7 +406,8 @@ h3 {
 
 .footer__titre h2 {
   color: white;
-  font-size: 18px;
+  text-shadow: 1px 1px 7px #424141;
+  font-size: 20px;
 }
 
 .footer__text {
@@ -865,117 +847,6 @@ h3 {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
     color: #9356DC;
-  }
-}
-
-/* Responsive Tablette (entre 500 et 1100px)*/
-@media screen and (min-width: 500px) and (max-width: 1100px) {
-  /* Explorer */
-  .explorer__reservez {
-    padding: 10px 0px 20px 0px;
-  }
-  /* Fonctionnement */
-  .fonct {
-    height: 120px;
-    padding: 25px 0 10px 0;
-  }
-  .fonct__titre {
-    height: 10%;
-  }
-  .fonct__group {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .fonct__group .step {
-    width: 25%;
-    height: 70%;
-  }
-  .fonct__group .step p {
-    font-size: 15px;
-  }
-  /* Nav */
-  .resto {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: 580px;
-  }
-  .resto__annonce {
-    width: 45%;
-    height: 40%;
-  }
-  /* Footer */
-  .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-  }
-  .footer__titre {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 80%;
-    width: 25%;
-  }
-  .footer__titre h2 {
-    font-size: 35px;
-  }
-  /* Page Menu*/
-  .module-img__photo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 100%;
-    max-height: none;
-  }
-  .block-menu {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: 500px;
-    padding-bottom: 20px;
-  }
-  .food {
-    width: 30%;
-    height: 72%;
-  }
-  .food__selection {
-    height: 22%;
-  }
-  .variation__food--1__selection {
-    height: 19%;
-  }
-}
-
-/* Responsive Desktop (+ de 1101px)*/
-@media screen and (min-width: 1101px) {
-  /* Page Menu*/
-  .module-img__photo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 100%;
-    max-height: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */

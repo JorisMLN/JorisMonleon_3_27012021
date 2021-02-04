@@ -1,3 +1,4 @@
+
 /* Fonts */
 @font-face{
     font-family:'Shrikhand';
@@ -30,7 +31,7 @@ a{
 }
 h2{
     font-size: 24px;
-    text-shadow: 1px 1px 0px black;
+    text-shadow: 1px 1px 2px rgb(73, 72, 72);
     color: rgb(44, 43, 43);
 }
 h3{
@@ -61,7 +62,9 @@ h3{
     flex-direction: row;
     height: 65px;
     &__link{
-        width: 15%;
+        
+        // width: 15%;
+        width: 50px;
         &__arrow{
             display: flex;
             text-align: center;
@@ -71,7 +74,7 @@ h3{
     }
     &__bloc{
         height: 95%;
-        width: 84%;
+        width: 100%;
         &__logo{
             max-height: 30px;
             margin-left: -52px;
@@ -115,8 +118,8 @@ h3{
     }
 }
 .btn-explorer{
-    background-color: $Primaire;
-    box-shadow: 1px 1px 10px rgb(145, 143, 143);
+    background: linear-gradient(100deg, $Primaire, $Secondaire);
+    box-shadow: 0px 6px 8px rgb(145, 143, 143);
     text-shadow: 1px 1px 10px rgb(145, 143, 143);
     font-size: 17px;
     color: white;
@@ -128,24 +131,8 @@ h3{
     cursor: pointer;
     &:hover{
         border-radius: 30px;
-        box-shadow: 2px 0px 10px rgb(15, 15, 15);
-        &::after{
-            border-radius: 30px;
-            opacity: 1;
-        }
-    }
-    &::after {
-        border-radius: 30px;
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: radial-gradient(circle, lighten($Secondaire, 5) 0%, darken($Secondaire, 10) 100%);
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 350ms;
+        box-shadow: 0px 6px 12px rgb(145, 143, 143);
+        background: linear-gradient(100deg, lighten($Primaire, 5%), lighten($Secondaire, 5%));
     }
 }
 
@@ -304,7 +291,8 @@ h3{
         padding-left: 30px;
         h2{
             color: white;
-            font-size: 18px;
+            text-shadow: 1px 1px 7px rgb(66, 65, 65);
+            font-size: 20px;
         }
     }
     &__text{
@@ -589,106 +577,5 @@ h3{
     to {
         transform: rotate(360deg);
         color: $Primaire;
-    }
-}
-
-
-
-/* Responsive Tablette (entre 500 et 1100px)*/
-@media screen and (min-width: 500px) and (max-width: 1100px){
-    /* Explorer */
-    .explorer{
-        &__reservez{
-            padding: 10px 0px 20px 0px;
-        }
-    }
-    /* Fonctionnement */
-    .fonct{
-        height: 120px;
-        padding: 25px 0 10px 0;
-        &__titre{
-            height: 10%;
-        }
-        &__group{
-            flex-direction: row;
-            .step{
-                width: 25%;
-                height: 70%;
-                p{
-                    font-size: 15px;
-                }
-            }
-        }
-    }
-    /* Nav */
-    .resto{
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 580px;
-        &__annonce{
-            width: 45%;
-            height: 40%;
-        }
-    }
-    /* Footer */
-    .footer{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row-reverse;
-        &__titre{
-            display: flex;
-            align-items: center;
-            height: 80%;
-            width: 25%;
-            h2{
-                font-size: 35px; 
-            }
-        }
-    }
-    /* Page Menu*/
-    .module-img{
-        &__photo{
-            display: flex;
-            max-width: 100%;
-            max-height: none;
-        }
-    }
-    .block-menu{
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 500px;
-        padding-bottom: 20px;
-    }
-    .food{
-        width: 30%;
-        height: 72%;
-        &__selection{
-            height: 22%;
-        }
-    }
-    .variation{
-        &__food--1{
-            &__selection{
-                height: 19%;
-            }
-        }
-    }
-    
-}
-
-/* Responsive Desktop (+ de 1101px)*/
-@media screen and (min-width: 1101px){
-    
-    
-    
-    
-    /* Page Menu*/
-    .module-img{
-        &__photo{
-            display: flex;
-            max-width: 100%;
-            max-height: none;
-        }
     }
 }
