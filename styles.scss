@@ -225,7 +225,23 @@ h3{
             overflow: hidden;
             .img{
                 display: flex;
-                max-width: 100%;
+                width: 100%;
+            }
+            .img--mod{
+                display: flex;
+                width: 100%;
+                margin-left: -19px;
+            }
+            .img-nouveau{
+                margin-left: -130px;
+                margin-top: -90px;
+                height: 30px;
+                width: 70px;
+                border-radius: 2px;
+                font-size: 14px;
+                border: 1px solid $Tertiare;
+                background-color: $Tertiare;
+                color: rgb(15, 136, 90);
             }
         }
         &__bot{
@@ -381,7 +397,7 @@ h3{
         height: 23%;
         width: 100%;
         border-radius: 15px;
-        box-shadow: 1px 1px 10px rgb(218, 218, 218);
+        box-shadow: 1px 1px 10px rgb(211, 211, 211);
         overflow: hidden;
         .selection-text{
             display: flex;
@@ -395,7 +411,7 @@ h3{
             &--1{
                 height: 40%;
                 font-weight: bold;
-                text-shadow: 1px 1px 1px gray;
+                text-shadow: 1px 1px 1px rgb(189, 187, 187);
                 font-size: 17px;
             }
             &--2{
@@ -420,7 +436,7 @@ h3{
                 transform: translateX(-50%);
             }
             &>.button-select{
-                transform: translateX(-100%);
+                transform: translateX(-99%);
                 &>.button-select__check{
                 transform: rotate(360deg);
                 }
@@ -647,7 +663,18 @@ h3{
     .food{
         width: 30%;
         height: 72%;
+        &__selection{
+            height: 22%;
+        }
     }
+    .variation{
+        &__food--1{
+            &__selection{
+                height: 19%;
+            }
+        }
+    }
+    
 }
 
 /* Responsive Desktop (+ de 1101px)*/

@@ -314,7 +314,27 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
+  width: 100%;
+}
+
+.resto__annonce__photo .img--mod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-left: -19px;
+}
+
+.resto__annonce__photo .img-nouveau {
+  margin-left: -130px;
+  margin-top: -90px;
+  height: 30px;
+  width: 70px;
+  border-radius: 2px;
+  font-size: 14px;
+  border: 1px solid #99E2D0;
+  background-color: #99E2D0;
+  color: #0f885a;
 }
 
 .resto__annonce__bot {
@@ -533,8 +553,8 @@ h3 {
   height: 23%;
   width: 100%;
   border-radius: 15px;
-  -webkit-box-shadow: 1px 1px 10px #dadada;
-          box-shadow: 1px 1px 10px #dadada;
+  -webkit-box-shadow: 1px 1px 10px lightgray;
+          box-shadow: 1px 1px 10px lightgray;
   overflow: hidden;
 }
 
@@ -560,7 +580,7 @@ h3 {
 .food__selection .selection-text--1 {
   height: 40%;
   font-weight: bold;
-  text-shadow: 1px 1px 1px gray;
+  text-shadow: 1px 1px 1px #bdbbbb;
   font-size: 17px;
 }
 
@@ -595,8 +615,8 @@ h3 {
 }
 
 .food__selection:hover > .button-select {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateX(-99%);
+          transform: translateX(-99%);
 }
 
 .food__selection:hover > .button-select > .button-select__check {
@@ -938,6 +958,12 @@ h3 {
   .food {
     width: 30%;
     height: 72%;
+  }
+  .food__selection {
+    height: 22%;
+  }
+  .variation__food--1__selection {
+    height: 19%;
   }
 }
 
