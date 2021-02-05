@@ -1,5 +1,5 @@
 /* Responsive Tablette (entre 500 et 1100px)*/
-@media screen and (min-width: 500px) and (max-width: 1100px) {
+@media screen and (min-width: 450px) and (max-width: 1100px) {
   /* Explorer */
   .explorer__reservez {
     padding: 10px 0px 20px 0px;
@@ -14,7 +14,7 @@
   }
   .fonct__titre {
     height: 10%;
-    padding-left: 55px;
+    padding-left: 95px;
   }
   .fonct__group {
     -webkit-box-orient: horizontal;

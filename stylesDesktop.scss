@@ -31,6 +31,12 @@
         flex-direction: row;
         flex-wrap: wrap;
         height: 580px;
+        &__titre{
+            margin-top: -30px;
+            display: flex;
+            justify-content: space-around;
+            padding-left: 0;
+        }
         &__annonce{
             width: 40%;
             height: 40%;

@@ -244,6 +244,7 @@ h3{
                     color: $Primaire;
                 }
                 &:hover + .logocoeur--full{
+                    // transform: opacity(1);
                     transform: scale(1);
                 }
             }
@@ -254,6 +255,7 @@ h3{
                 font-size: 22px;
                 margin-top: -23px;
                 margin-left: 2px;
+                // transform: opacity(0);
                 transform: scale(0);
                 transition: transform 500ms;
             }
