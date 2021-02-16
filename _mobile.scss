@@ -31,7 +31,6 @@ a{
 }
 h2{
     font-size: 24px;
-    text-shadow: 1px 1px 2px rgb(73, 72, 72);
     color: rgb(44, 43, 43);
 }
 h3{
@@ -197,7 +196,6 @@ h3{
         padding-left: 20px;
         font-weight: bold;
         font-size: 23px;
-        text-shadow: 1px 1px 1px gray;
     }
     &__annonce{
         flex-direction: column;
@@ -272,7 +270,6 @@ h3{
     &__titre{
         height: 45%;
         font-weight: bold;
-        text-shadow: 1px 1px 1px gray;
         font-size: 17px;
     }
     &__lieu{
@@ -293,7 +290,6 @@ h3{
         padding-left: 30px;
         h2{
             color: white;
-            text-shadow: 1px 1px 7px rgb(66, 65, 65);
             font-size: 20px;
         }
     }
@@ -374,7 +370,6 @@ h3{
         padding-top: 5px;
         height: 8%;
         width: 100%;
-        text-shadow: 1px 1px 1px gray;
         &__surligne{
             height: 3px;
             width: 45px;
@@ -401,13 +396,11 @@ h3{
             &--1{
                 height: 40%;
                 font-weight: bold;
-                text-shadow: 1px 1px 1px rgb(189, 187, 187);
                 font-size: 17px;
             }
             &--2{
                 height: 40%;
                 font-size: 14px;
-                text-shadow: 1px 1px 2px rgb(197, 197, 197);
             }
         }
         .selection-prix{

@@ -28,7 +28,6 @@ a {
 
 h2 {
   font-size: 24px;
-  text-shadow: 1px 1px 2px #494848;
   color: #2c2b2b;
 }
 
@@ -269,7 +268,6 @@ h3 {
   padding-left: 20px;
   font-weight: bold;
   font-size: 23px;
-  text-shadow: 1px 1px 1px gray;
 }
 
 .resto__annonce {
@@ -380,7 +378,6 @@ h3 {
 .resto-text__titre {
   height: 45%;
   font-weight: bold;
-  text-shadow: 1px 1px 1px gray;
   font-size: 17px;
 }
 
@@ -406,7 +403,6 @@ h3 {
 
 .footer__titre h2 {
   color: white;
-  text-shadow: 1px 1px 7px #424141;
   font-size: 20px;
 }
 
@@ -520,7 +516,6 @@ h3 {
   padding-top: 5px;
   height: 8%;
   width: 100%;
-  text-shadow: 1px 1px 1px gray;
 }
 
 .food__titre__surligne {
@@ -562,14 +557,12 @@ h3 {
 .food__selection .selection-text--1 {
   height: 40%;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #bdbbbb;
   font-size: 17px;
 }
 
 .food__selection .selection-text--2 {
   height: 40%;
   font-size: 14px;
-  text-shadow: 1px 1px 2px #c5c5c5;
 }
 
 .food__selection .selection-prix {
