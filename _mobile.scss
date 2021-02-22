@@ -241,31 +241,31 @@ h3{
             width: 88%;
             height: 28%;
             padding: 0 20px 0 5px;
-            .logocoeur{
-                display: flex;
-                align-self: flex-end;
-                font-size: 25px;
-                // &:hover{
-                //     color: $Primaire;
-                // }
-                // &:hover + .logocoeur--full{
-                //     transform: opacity(1);
-                //     // transform: scale(1);
-                // }
-            }
-            .logocoeur--full{
-                color: white;
-                display: flex;
-                align-self: flex-end;
-                font-size: 22px;
-                margin-top: -23px;
-                margin-left: 2px;
-                // transform: opacity(0);
-                // transform: scale(0);
-                transition: transform 500ms;
-                &:hover{
-                    color: $Primaire;
-                    transition: transform 500ms;
+            .like{
+                height: 50%;
+                width: 36px;
+                background: linear-gradient(360deg, $Primaire, $Secondaire);
+                &__logocoeur{
+                    font-size: 36px;
+                    background-color: white;
+                    &:hover{
+                        transition: 500ms;
+                        background-color: white;
+                        mix-blend-mode: screen;
+                    }
+                }
+                &__logocoeur--full{
+                    display: flex;
+                    align-self: center;
+                    font-size: 36px;
+                    background-color: white;
+                    color: transparent;
+                    margin-bottom: -36px;
+                    &:hover + .like__logocoeur{
+                        transition: 500ms;
+                        background-color: transparent;
+                        mix-blend-mode: screen;
+                    }
                 }
             }
             p{
