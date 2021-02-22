@@ -1,5 +1,5 @@
-/* Responsive Tablette (entre 900 et 1100px) */
-@media screen and (min-width: 900px) and (max-width: 1100px){
+/* Responsive mini tablette (entre 530 et 899px) */
+@media screen and (min-width: 530px) and (max-width: 899px){
     /* Explorer */
     .explorer{
         &__reservez{
@@ -48,10 +48,14 @@
             display: flex;
             align-items: center;
             height: 80%;
-            width: 25%;
+            width: 40%;
+            padding-left: 2px;
             h2{
                 font-size: 35px; 
             }
+        }
+        &__text{
+            padding-left: 2px;
         }
     }
     /* Page Menu*/
@@ -62,18 +66,8 @@
             max-height: none;
         }
     }
-    .block-menu{
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 500px;
-        padding-bottom: 20px;
-    }
     .food{
-        width: 30%;
-        height: 72%;
-        &__selection{
-            height: 22%;
-        }
+        width: 75%;
     }
     .variation{
         &__food--1{

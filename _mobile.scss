@@ -245,24 +245,28 @@ h3{
                 display: flex;
                 align-self: flex-end;
                 font-size: 25px;
-                &:hover{
-                    color: $Primaire;
-                }
-                &:hover + .logocoeur--full{
-                    // transform: opacity(1);
-                    transform: scale(1);
-                }
+                // &:hover{
+                //     color: $Primaire;
+                // }
+                // &:hover + .logocoeur--full{
+                //     transform: opacity(1);
+                //     // transform: scale(1);
+                // }
             }
             .logocoeur--full{
-                color: $Primaire;
+                color: white;
                 display: flex;
                 align-self: flex-end;
                 font-size: 22px;
                 margin-top: -23px;
                 margin-left: 2px;
                 // transform: opacity(0);
-                transform: scale(0);
+                // transform: scale(0);
                 transition: transform 500ms;
+                &:hover{
+                    color: $Primaire;
+                    transition: transform 500ms;
+                }
             }
             p{
                 font-weight: bold;
