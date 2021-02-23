@@ -241,37 +241,44 @@ h3{
             width: 88%;
             height: 28%;
             padding: 0 20px 0 5px;
-            .like{
-                height: 50%;
-                width: 36px;
-                background: linear-gradient(360deg, $Primaire, $Secondaire);
-                &__logocoeur{
-                    font-size: 36px;
-                    background-color: white;
-                    &:hover{
-                        transition: 500ms;
-                        background-color: white;
-                        mix-blend-mode: screen;
-                    }
-                }
-                &__logocoeur--full{
-                    display: flex;
-                    align-self: center;
-                    font-size: 36px;
-                    background-color: white;
-                    color: transparent;
-                    margin-bottom: -36px;
-                    &:hover + .like__logocoeur{
-                        transition: 500ms;
-                        background-color: transparent;
-                        mix-blend-mode: screen;
-                    }
-                }
-            }
             p{
                 font-weight: bold;
             }
         }
+    }
+}
+.like{
+    position: relative;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    &__logocoeur{
+        font-size: 25px;
+        background-color: transparent;
+        z-index: 2;
+        position: absolute;
+        transition-duration: 650ms;
+        &:hover{
+            color: transparent;
+        }
+        &:hover + .like__logocoeur--full{
+            transform: scale(1);
+        }
+    }
+    &__logocoeur--full{
+        background: -moz-linear-gradient(360deg, $Primaire, $Secondaire);
+        background: -webkit-linear-gradient(360deg, $Primaire, $Secondaire);
+        background: linear-gradient(360deg, $Primaire, $Secondaire);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 25px;
+        transform: scale(0);
+        transition: transform 500ms;
+        position: absolute;
+        z-index: 1;
+        
     }
 }
 .resto-text{

@@ -336,46 +336,53 @@ h3 {
   padding: 0 20px 0 5px;
 }
 
-.resto__annonce__bot .like {
-  height: 50%;
-  width: 36px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(360deg, #9356DC, #FF79DA);
+.resto__annonce__bot p {
+  font-weight: bold;
 }
 
-.resto__annonce__bot .like__logocoeur {
-  font-size: 36px;
-  background-color: white;
-}
-
-.resto__annonce__bot .like__logocoeur:hover {
-  -webkit-transition: 500ms;
-  transition: 500ms;
-  background-color: white;
-  mix-blend-mode: screen;
-}
-
-.resto__annonce__bot .like__logocoeur--full {
+.like {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  font-size: 36px;
-  background-color: white;
-  color: transparent;
-  margin-bottom: -36px;
+  height: 30px;
+  width: 30px;
 }
 
-.resto__annonce__bot .like__logocoeur--full:hover + .like__logocoeur {
-  -webkit-transition: 500ms;
-  transition: 500ms;
+.like__logocoeur {
+  font-size: 25px;
   background-color: transparent;
-  mix-blend-mode: screen;
+  z-index: 2;
+  position: absolute;
+  -webkit-transition-duration: 650ms;
+          transition-duration: 650ms;
 }
 
-.resto__annonce__bot p {
-  font-weight: bold;
+.like__logocoeur:hover {
+  color: transparent;
+}
+
+.like__logocoeur:hover + .like__logocoeur--full {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.like__logocoeur--full {
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(360deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+  position: absolute;
+  z-index: 1;
 }
 
 .resto-text {
