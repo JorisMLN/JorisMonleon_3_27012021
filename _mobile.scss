@@ -181,9 +181,9 @@ h3{
                     color: $Primaire;
                 }
             }
-            p{
-                font-weight: bold;
-            }
+            // p{
+            //     font-weight: bold;
+            // }
         }
     }
 }
@@ -557,10 +557,10 @@ h3{
 
 
 
-/* Loading Spinner V.2 (total = 2250px)*/
+/* Loading Spinner */
 .hide-spin{
     height: 100vh;
-    animation: hideSpin 20ms forwards;
+    animation: hideSpin 2000ms forwards;
     overflow-x: hidden;
 }
 .loading{
@@ -568,7 +568,7 @@ h3{
     height: 100%;
     background-color: white;
     position: absolute;
-    animation: loading 20ms forwards;
+    animation: loading 2000ms forwards;
     &__spinner{
         flex-direction: column;
         width: 100%;
@@ -604,7 +604,6 @@ h3{
     to{
         opacity: 0;
         z-index: -5;
-        // visibility: hidden;
     }
 }
 
