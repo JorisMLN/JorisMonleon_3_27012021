@@ -623,3 +623,20 @@ h3{
         color: $Primaire;
     }
 }
+@media screen and (min-width: 415px) and (max-width: 529px){
+    .module-img{
+        height: 280px;
+        overflow: hidden;
+        &__photo{
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+            max-height: none;
+            &--version2{
+                display: flex;
+                max-width: 100%;
+                max-height: none;
+            }
+        }
+    }
+}

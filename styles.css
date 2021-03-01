@@ -913,6 +913,28 @@ h3 {
   }
 }
 
+@media screen and (min-width: 415px) and (max-width: 529px) {
+  .module-img {
+    height: 280px;
+    overflow: hidden;
+  }
+  .module-img__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    max-height: none;
+  }
+  .module-img__photo--version2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    max-height: none;
+  }
+}
+
 /* Responsive mini tablette (entre 530 et 899px) */
 @media screen and (min-width: 530px) and (max-width: 899px) {
   /* Explorer */
