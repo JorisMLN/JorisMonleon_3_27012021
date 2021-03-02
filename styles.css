@@ -461,6 +461,7 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   max-height: 100%;
+  width: 100%;
 }
 
 .module-img__photo--version2 {
@@ -921,7 +922,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 415px) and (max-width: 529px) {
+@media screen and (min-width: 431px) and (max-width: 529px) {
   .module-img {
     height: 280px;
     overflow: hidden;
@@ -940,6 +941,20 @@ h3 {
     display: flex;
     max-width: 100%;
     max-height: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .module-img {
+    height: 280px;
+    overflow: hidden;
+  }
+  .module-img__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
   }
 }
 
