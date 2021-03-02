@@ -514,6 +514,9 @@ h3 {
           flex-direction: column;
   width: 90%;
   height: 26%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .food__titre {
@@ -533,11 +536,16 @@ h3 {
   width: 100%;
 }
 
-.food__titre__surligne {
+.food__surligne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: left;
+      align-self: left;
   height: 3px;
   width: 45px;
   background-color: #99E2D0;
-  margin-bottom: -5px;
+  margin-top: -10px;
 }
 
 .food__selection {
